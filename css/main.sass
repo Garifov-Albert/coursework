@@ -5,6 +5,7 @@ $bgcLight: #F7ECE1
 #login 
     background-color: $bgcLight
     height: 935px
+    
 .loginContainer
     display: flex
     align-items: center
@@ -41,7 +42,6 @@ $bgcLight: #F7ECE1
     border-radius: 77px;
     margin-top: 150px
 .loginEmail 
-   
     background: #FFFFFF;
     border: 1px solid #000000;
     box-sizing: border-box;
@@ -53,6 +53,12 @@ $bgcLight: #F7ECE1
     margin-left: 64px
 .loginEmail:hover 
     box-shadow: 0px 2px 22px 10px rgba(31, 122, 140, 0.71);
+.loginEmail:focus
+    outline: none;
+.loginPassword:focus
+    outline: none
+.loginBtn:focus 
+    outline: none
 .loginPassword
     outline:none
     background: #FFFFFF;
@@ -86,3 +92,202 @@ $bgcLight: #F7ECE1
     background-color: #C5FFFD
     color: $primary-color
     transition: 1s
+
+#registr 
+    background-color: #F7ECE1
+.registrContainer
+  display:flex
+  flex-direction: column
+  align-items: center
+.registrLine
+    padding-top: 40px
+    display: flex
+    flex-direction: row
+    justify-content: center
+.registrLogo
+    border-radius: 150px
+    background: #1F7A8C;
+    box-shadow: 5px 6px 12px 3px rgba(0, 0, 0, 0.8);
+    width: 107px;
+    height: 104px
+.registrImg
+    width: 58.38px;
+    height: 55px;
+    margin-top: 22px
+    margin-left: 25px
+.registrTitle 
+    font-family: $font
+    font-style: normal;
+    font-weight: bold;
+    font-size: 72px;
+    line-height: 84px;
+    text-align: center;
+    color: #1F7A8C;
+    margin-top: 10px
+    margin-left: 40px
+.registrBox
+    display: flex
+    flex-direction: column
+    align-items: center
+    margin-top: 30px
+.firstRegistrInput
+    margin-top: 30px
+.registrHeadline 
+    font-family: $font
+    font-style: normal;
+    font-weight: bold;
+    font-size: 72px;
+    line-height: 84px;
+    text-align: center;
+    color: #C67E2C;
+.registrInput 
+    width: 604px
+    height: 66px
+    padding: 18px 10px 10px 41px
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 33px;
+    margin-bottom: 44px
+.registrInput:hover
+    background: #FFFFFF;    
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    box-shadow: 0px 2px 22px 10px rgba(31, 122, 140, 0.71);
+    border-radius: 33px;
+.registrDate 
+    padding-left: 180px
+.registrBtn
+    background: #1F7A8C;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    box-shadow: 5px 6px 12px 2px rgba(0, 0, 0, 0.8);
+    border-radius: 33px;
+    font-family: $font
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 30px;
+    color: #C5FFFD;
+    padding: 13px 40px 8px 40px
+    margin-bottom: 25px
+.registrBtn:hover
+    background-color:#C5FFFD
+    color:#1F7A8C
+    transition: 0.5s
+.Birthday 
+    margin-top: -86px
+    margin-left: -400px
+    margin-bottom: 60px
+    color: grey
+input:focus
+    outline: none
+button:focus
+    outline: none!important
+
+    /*MENU */
+#Mainmenu 
+    display: flex
+    flex-direction: row
+    justify-content: center
+   
+
+.menu 
+    background-color: $primary-color
+    width: 120px
+.menuActive
+    width: 347px !important
+.menuSecond 
+    background: #F7ECE1
+    width: 227px
+.menuSecondActive 
+    width: 0px !important
+
+.menuTitle 
+    font-family: $font
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 47px;
+    text-align: center;
+    color: #C5FFFD;
+    margin-top: 28px
+    margin-left: 10px
+    display: none
+.menuTitleActive 
+    display: block
+.menuLogo
+    width: 53px;
+    height: 45.28px; 
+    margin-top: 30px
+    margin-left: 40px
+.menuLine 
+    display: flex
+    flex-direction: row
+    flex-wrap: nowrap  
+.menuMenu 
+    outline: none !important
+    border: none
+    background: none
+    margin-left: 35px
+    margin-top: 30px
+    
+
+.menuBox
+    display: flex
+    flex-direction: column
+    margin-top: 56px
+    margin-left: -5px
+    
+.menuCol 
+    outline: none
+    border: none
+    background: none
+    width: 60px
+    display: flex
+    flex-direction: row
+    margin-left: 40px
+    margin-bottom: 38px
+.menuCol:hover 
+    background: #1F7A8C;
+    border: 2px solid #C5FFFD;
+    box-sizing: border-box;
+    border-radius: 50px;
+    height: 55px
+.menuCol:focus
+    outline: none 
+.menuFirstCol
+    outline: none
+    border: none
+    background: none
+    width: 290px !important
+    display: flex
+    flex-direction: row
+    margin-left: 40px
+    margin-bottom: 38px
+.menuFirstCol:hover
+    background: #1F7A8C;
+    border: 2px solid #C5FFFD;
+    box-sizing: border-box;
+    border-radius: 50px;
+    height: 55px
+.menuFirstCol:focus
+    outline: none 
+.menuIcon 
+    margin-left: -10px
+    margin-right: 34px
+    width: 42px
+    height: 32px
+    padding-top: 5px
+    padding-left: 15px
+.menuName 
+    margin-top: 5px
+    font-family: $font
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    color: #EF8A17;
+    display: none
+.menuNameActive
+    display: block

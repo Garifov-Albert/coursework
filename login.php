@@ -28,7 +28,13 @@
       </div>
   </div>
 </section>
-
+<?php
+include 'includes/connectdb.php';
+$query = "SELECT * FROM `users`";
+$query = mysqli_query($link, $query);
+$query = mysqli_fetch_array($query);
+var_dump($query);
+?>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

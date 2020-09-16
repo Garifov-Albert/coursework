@@ -15,21 +15,29 @@
     <title>D:\Planner registration</title>
   </head>
   <body>
-<section id="login">
-  <div class="container loginContainer">
-    <p class="loginTitle">D:\Planner</p>
-      <div class="loginLogo">
-        <img src="img/logo.png" class='logoImg' alt="">
+<section id="registr">
+  <div class="container registrContainer">
+    <div class="registrLine">
+      <div class="registrLogo">
+       <img src="img/logo.png" class='registrImg' alt="">
       </div>
-      <div class="loginBox">
-        <input class='loginEmail' placeholder='Login' type="text">
-        <input class='loginPassword'  placeholder='Password' type="text">
-        <button class="loginBtn">Регистрация</button>
-      </div>
-  </div>
+      <p class="registrTitle">D:\Planner</p>
+    </div>
+     
+    <div class="registrBox">
+      <p class="registrHeadline">Регистрация</p>
+      <input type="text"placeholder="Логин" class="registrInput firstRegistrInput">
+      <input type="text" placeholder="Пароль"class="registrInput">
+      <input type="text" placeholder="Фамилия"class="registrInput">
+      <input type="text" placeholder="Имя"class="registrInput">
+      <input type="date" placeholder="День рождение"class="registrInput registrDate" id="date" name="date"  required>
+      <p class='Birthday'>День рождение</p>
+      <button class="registrBtn">Зарегестрироваться</button>
+    </div>
+  
 </section>
 
-
+</body>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

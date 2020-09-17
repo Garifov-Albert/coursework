@@ -8,4 +8,13 @@ $(document).ready(function(){
        $('.menuName').toggleClass('menuNameActive');
        $('.menuCol').toggleClass('menuFirstCol');
    });
+   $('.contentPriority').on('click', function(){
+       $('.priorityBox').toggleClass('priorityBoxActive');
+   });
+   $('.priorityYellow').on('click', function(){
+    $('.priorityBox').toggleClass('priorityBoxActive');
+   });
+   $('.priorityRed').on('click', function(){
+    $('.priorityBox').toggleClass('priorityBoxActive');
+   })
 });

@@ -46,7 +46,7 @@
 }
 
 .loginBox {
-  width: 540px;
+  width: 814px;
   height: 625px;
   background: #FFFFFF;
   border: 2px solid #000000;
@@ -64,11 +64,11 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 33px;
-  width: 412px;
+  width: 582px;
   height: 66px;
   padding-left: 36px;
   margin-top: 204px;
-  margin-left: 64px;
+  margin-left: 114px;
 }
 
 .loginEmail:hover {
@@ -94,11 +94,11 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 33px;
-  width: 412px;
+  width: 582px;
   height: 66px;
   padding-left: 36px;
   margin-top: 67px;
-  margin-left: 64px;
+  margin-left: 114px;
 }
 
 .loginPassword:hover {
@@ -116,7 +116,7 @@
   border-radius: 33px;
   width: 206px;
   height: 62px;
-  margin-left: 158px;
+  margin-left: 115px;
   margin-top: 67px;
   font-family: Roboto;
   font-style: normal;
@@ -129,6 +129,33 @@
 .loginBtn:hover {
   background-color: #C5FFFD;
   color: #1F7A8C;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.logrRegistrBtn {
+  margin-left: 20px;
+  width: 343px;
+  height: 62px;
+  padding: 12px 28px 10px 35px;
+  background: #C5FFFD;
+  border: 1px solid #000000;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 5px 6px 12px 2px rgba(0, 0, 0, 0.8);
+          box-shadow: 5px 6px 12px 2px rgba(0, 0, 0, 0.8);
+  border-radius: 33px;
+  color: #1F7A8C;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 30px;
+}
+
+.logrRegistrBtn:hover {
+  background: #1F7A8C;
+  color: #C5FFFD;
   -webkit-transition: 1s;
   transition: 1s;
 }
@@ -452,5 +479,298 @@ button:focus {
 
 .menuNameActive {
   display: block;
+}
+
+.menuIcon {
+  width: 40px;
+  height: 40px;
+}
+
+.menuNameExit {
+  margin-top: 7px;
+}
+
+.Enter {
+  display: none;
+  /* CONTENT */
+}
+
+#content {
+  background: #F7ECE1;
+}
+
+.contentSearch {
+  width: 1131px;
+  height: 54px;
+  border: 2px solid #000000;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 33px;
+  background-color: #F7ECE1;
+  padding-left: 60px;
+  margin-left: 155px;
+  margin-top: 30px;
+  color: #EF8A17;
+}
+
+.contentSearchIcon {
+  position: absolute;
+  margin-left: -1120px;
+  margin-top: 40px;
+}
+
+.contentSettingsIcon {
+  margin-left: 150px;
+  margin-top: -20px;
+}
+
+.contentPrimaryBg {
+  position: absolute;
+  width: 1298px;
+  height: 700px;
+  background: #1F7A8C;
+  border-radius: 50px;
+  z-index: 2;
+  margin-top: 50px;
+  margin-left: 74px;
+}
+
+.contentTextArea {
+  position: absolute;
+  width: 1178px;
+  height: 654px;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 50px;
+  z-index: 3;
+  margin-top: 70px;
+  margin-left: 135px;
+  padding: 50px 50px 50px 50px;
+  color: black;
+}
+
+.contentTextArea::-webkit-input-placeholder {
+  color: black;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 56px;
+  color: #000000;
+}
+
+.contentTextArea:-ms-input-placeholder {
+  color: black;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 56px;
+  color: #000000;
+}
+
+.contentTextArea::-ms-input-placeholder {
+  color: black;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 56px;
+  color: #000000;
+}
+
+.contentTextArea::placeholder {
+  color: black;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 56px;
+  color: #000000;
+}
+
+.contentTextArea:focus {
+  outline: none;
+}
+
+.contentPriority {
+  background: #EF8A17;
+  border-radius: 33px;
+  width: 327px;
+  height: 54px;
+  padding: 12px 35px 6px  42px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  color: rgba(0, 0, 0, 0.73);
+  border: none;
+  margin-top: 760px;
+  margin-left: 480px;
+  margin-bottom: 0px;
+}
+
+.contentPriority:hover {
+  background: rgba(0, 0, 0, 0.73);
+  color: #EF8A17;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.priorityBox {
+  position: absolute;
+  width: 199px;
+  height: 120px;
+  background: #EFECEC;
+  border: 1px solid #000000;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-top: -90px;
+  margin-left: 800px;
+  visibility: hidden;
+  z-index: 3;
+  margin-top: -100px;
+}
+
+.priorityBoxActive {
+  visibility: visible;
+}
+
+.priorityRed {
+  height: 61px;
+  width: 197px;
+  border: none;
+}
+
+.priorityRed:hover {
+  background: rgba(31, 122, 140, 0.71);
+}
+
+.priorityRedCircle {
+  width: 32px;
+  height: 32px;
+  background: #DB0D00;
+  border-radius: 50px;
+}
+
+.priorityRedText {
+  margin-top: -27px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+}
+
+.priorityYellow {
+  height: 57px;
+  width: 197px;
+  border: none;
+}
+
+.priorityYellow:hover {
+  background: rgba(31, 122, 140, 0.71);
+}
+
+.priorityYellowCircle {
+  background: #DDD62C;
+  width: 32px;
+  height: 32px;
+  border-radius: 50px;
+}
+
+.priorityYellowText {
+  margin-top: -27px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+}
+
+.contentFavourite {
+  z-index: 2;
+  background: #EF8A17;
+  border-radius: 33px;
+  width: 323px;
+  height: 54px;
+  color: rgba(0, 0, 0, 0.73);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  border: none;
+  position: absolute;
+  margin-top: 760px;
+  margin-left: 25px;
+  margin-bottom: 0px;
+}
+
+.contentFavourite:hover {
+  background: rgba(0, 0, 0, 0.73);
+  color: #EF8A17;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.contentSave {
+  background: #EF8A17;
+  border-radius: 33px;
+  width: 180px;
+  height: 54px;
+  color: rgba(0, 0, 0, 0.73);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  border: none;
+  position: absolute;
+  margin-top: 760px;
+  margin-left: 370px;
+  margin-bottom: 0px;
+}
+
+.contentSave:hover {
+  background: rgba(0, 0, 0, 0.73);
+  color: #EF8A17;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.contentCircle1 {
+  position: absolute;
+  width: 320px;
+  height: 320px;
+  left: 1170px;
+  top: 149px;
+  background: #EF8A17;
+  z-index: 0;
+  border-radius: 250px;
+}
+
+.contentCircle2 {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  left: 1280px;
+  top: 507px;
+  background: #EF8A17;
+  z-index: 0;
+  border-radius: 250px;
+}
+
+.contentCircle3 {
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  left: 1310px;
+  top: 705px;
+  background: #EF8A17;
+  z-index: 0;
+  border-radius: 250px;
 }
 /*# sourceMappingURL=main.css.map */

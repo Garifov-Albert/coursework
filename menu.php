@@ -1,12 +1,14 @@
 <?php
+/*
 require 'includes/connectdb.php';
 if(isset($_POST['logout']))
 {
     header('Location: /logout.php');
     exit;
 }
-
+*/
 ?>
+
 <!doctype html>
 <html class='menuHtml' lang="ru">
 	<link rel="stylesheet" href="css/bootstrap.css">
@@ -25,34 +27,34 @@ if(isset($_POST['logout']))
     <button class='menuMenu'><img src="img/menu.png" alt=""></button>
         <form action="menu.php" method="post">
     <div class="menuBox">
-        <button class="menuCol">
+        <a class="menuCol">
             <img src="img/day.png" alt="Day" class="menuIcon">
             <p class="menuName">День</p>
-        </button>
-        <button class="menuCol">
+        </a>
+        <a class="menuCol">
             <img src="img/plan.png"   alt="Plan" class="menuIcon">
             <p class="menuName">Запланировано</p>
-        </button>
-        <button class="menuCol">
+        </a>
+        <a class="menuCol">
             <img src="img/favourite.png" alt="favourite" class="menuIcon">
             <p class="menuName">Избранные</p>
-        </button>
-        <button class="menuCol">
+        </a>
+        <a class="menuCol">
             <img src="img/section.png" alt="section" class="menuIcon">
             <p class="menuName">Разделы</p>
-        </button>
-        <button class="menuCol">
+        </a>
+        <a class="menuCol">
             <img src="img/bell.png" alt="bell" class="menuIcon">
             <p class="menuName">Напоминание</p>
-        </button>
-        <button class="menuCol">
+        </a>
+        <a class="menuCol">
             <img src="img/trash.png" alt="trash" class="menuIcon">
             <p class="menuName">Корзина</p>
-        </button>
-        <button class="menuCol" name="logout">
+        </a>
+        <a class="menuCol" target="full2" href='login.php' name="logout">
             <img src="img/logout.png" alt="logout" class="menuIcon">
-            <p class="menuName">Выйти</p>
-        </button>
+            <p class="menuName menuNameExit">Выйти</p>
+        </a>
     </div>
         </form>
     </div>

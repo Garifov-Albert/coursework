@@ -2,7 +2,8 @@
 require 'includes/connectdb.php';
 if(isset($_SESSION['logged_user']))
 {
-    echo 'Вы авторизованы, '.$_SESSION['logged_user']->name;
+    header('Location:/menu.php');
+    exit;
 }else{header('Location: http://coursework/login.php');
     exit;}
 

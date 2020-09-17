@@ -11,13 +11,14 @@ if(isset($data['do_login']))
         if(password_verify($data['password'],$user->password))
         {
             $_SESSION['logged_user'] = $user;
-            header('Location: http://coursework/index.php');
+            header('Location: /');
             exit;
         }
         else{$error[] = 'Ошибка2';}
     }else{$error[] = 'Ошибка1';}
     if(!empty($error)){echo array_shift($error);}
 }
+
 ?>
 <!doctype html>
 <html lang="ru">
@@ -49,6 +50,7 @@ if(isset($data['do_login']))
         <input class='loginEmail' placeholder='Login' type="text" name="login" required>
         <input class='loginPassword'  placeholder='Password' type="password" name="password" required>
         <button  type="submit" class="loginBtn" name = "do_login">Войти</button>
+        <a href="http://coursework/registration.php">Зарегистрироваться</a>
       </div>
   </div>
 </section>

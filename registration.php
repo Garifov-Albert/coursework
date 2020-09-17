@@ -22,7 +22,9 @@ if(isset($data['do_signup']))
         $users->name = $data['name'];
         $users->dateofbirth = $data['date'];
         R::store($users);
-        echo 'вы зарегистрированы';
+        $_SESSION['logged_user'] = $users;
+        header('Location: /');
+        exit;
     }else
     {
         echo array_shift($error);

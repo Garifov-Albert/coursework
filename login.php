@@ -1,3 +1,24 @@
+<?php
+require 'includes/connectdb.php';
+$data =  $_POST;
+if(isset($data['do_login']))
+{
+    $error = array();
+    $user = R::findOne('users','login = ?', array($data['login']));
+    if ($user)
+    {
+
+        if(password_verify($data['password'],$user->password))
+        {
+            $_SESSION['logged_user'] = $user;
+            header('Location: http://coursework/index.php');
+            exit;
+        }
+        else{$error[] = 'Ошибка2';}
+    }else{$error[] = 'Ошибка1';}
+    if(!empty($error)){echo array_shift($error);}
+}
+?>
 <!doctype html>
 <html lang="ru">
   <head>
@@ -5,16 +26,19 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-  
+
+
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/bootstrap.css">
-   
-    
-    
+
+
+
     <title>D:\Planner login</title>
   </head>
   <body>
+
+
+  <form action="login.php" method="post">
 <section id="login">
   <div class="container loginContainer">
     <p class="loginTitle">D:\Planner</p>
@@ -22,19 +46,14 @@
         <img src="img/logo.png" class='logoImg' alt="">
       </div>
       <div class="loginBox">
-        <input class='loginEmail' placeholder='Login' type="text">
-        <input class='loginPassword'  placeholder='Password' type="text">
-        <button class="loginBtn">Вход</button>
+        <input class='loginEmail' placeholder='Login' type="text" name="login" required>
+        <input class='loginPassword'  placeholder='Password' type="password" name="password" required>
+        <button  type="submit" class="loginBtn" name = "do_login">Войти</button>
       </div>
   </div>
 </section>
-<?php
-include 'includes/connectdb.php';
-$query = "SELECT * FROM `users`";
-$query = mysqli_query($link, $query);
-$query = mysqli_fetch_array($query);
-var_dump($query);
-?>
+  </form>
+  </body>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

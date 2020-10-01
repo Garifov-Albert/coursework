@@ -1,0 +1,119 @@
+@import url(https://fonts.googleapis.com/css?family=Dancing+Script);
+
+body {
+  text-align: center;
+  background: #ffdd7e;
+  color: #333;
+  font-family: "Dancing Script";
+  margin-top: 140px;
+ 
+}
+
+#app{
+  height: 180px;
+  cursor: grab;
+}
+.page {
+  font-size: 0.5em;
+  box-sizing: border-box;
+  color: #ddd;
+}
+
+.wrapper {
+  display: inline-block;
+  transform-style: preserve-3d;
+  perspective: 0px;
+  perspective-origin: 0 100px;
+  position: relative;
+  width: 300px;
+  transform: translate(150px, 0px);
+  pointer-events: none;
+  user-select: none;
+}
+.hyou{
+  background: #6b53b5;
+  border-radius: 5px;
+  width: 100px;
+  height: 140px;
+  border-bottom: 2px solid black;
+  top: 4px;
+}
+
+.hyou1 {
+  position: absolute;
+  left: -100px;
+  transform-origin: left center;
+}
+
+.hyou2 {
+  position: absolute;
+  left: 0px;
+  transform-origin: left center;
+0.2);
+}
+.sebyo{
+  position: absolute;
+  top: 4px;
+ 
+  width: 16px;
+  left: -8px;
+  border-radius: 2px;
+  border-left: 2px dotted #fcc;
+  border-right: 2px dotted #fcc;
+}
+.siori{
+  position: absolute;
+  height: 160px;
+  width: 6px;
+  left: 20px;
+  border-radius: 2px;
+  background: #Fc402f;
+}
+
+.papers{
+  width: 90px;
+  height: 136px;
+  border-bottom: 6px solid #ddd;
+  background: white;
+  overflow: hidden;
+  padding: 1.5em 1em;
+}
+
+.page-left {
+  position: absolute;
+  left: -90px;
+  background: linear-gradient(to left, #ddd, #fff 15%, #fff);
+}
+.page-right {
+  position: absolute;
+  left: 0px;
+  background: linear-gradient(to left, #fff, #fff 95%, #aaa);
+}
+
+.page-single{
+  position: absolute;
+  left: 0px;
+  width: 50px;
+  height: 130px;
+  transform-origin: left center;
+  background: white;
+  z-index: 99999;
+  transform-style: preserve-3d;
+}
+.page-single-1{
+  transform-style: preserve-3d;
+  height: 130px;
+  width: 20px;
+  position: absolute;
+  left: 100%;
+  transform-origin: left center;
+  transform: rotateY(-30deg);
+}
+
+.css{
+  color: #6b53b5;
+}
+h1{
+  margin-bottom: 0;
+}
+

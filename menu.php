@@ -12,7 +12,7 @@ if(isset($_POST['logout']))
 <!doctype html>
 <html class='menuHtml' lang="ru">
 	<link rel="stylesheet" href="css/bootstrap.css">
-	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/style.css">
 <head>
 	<title>Menu</title>
 </head>
@@ -27,11 +27,15 @@ if(isset($_POST['logout']))
     <button class='menuMenu'><img src="img/menu.png" alt=""></button>
         <form action="menu.php" method="post">
     <div class="menuBox">
-        <a class="menuCol">
+        <a class="menuCol" href='content.html' target='content'>
+            <img src="img/add.png"   alt="Plan" class="menuIcon">
+            <p class="menuName">Написать</p>
+        </a>
+        <a class="menuCol" href='day.html' target="content">
             <img src="img/day.png" alt="Day" class="menuIcon">
             <p class="menuName">День</p>
         </a>
-        <a class="menuCol">
+        <a class="menuCol" href='plan.html' target='content'>
             <img src="img/plan.png"   alt="Plan" class="menuIcon">
             <p class="menuName">Запланировано</p>
         </a>

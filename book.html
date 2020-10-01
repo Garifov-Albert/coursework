@@ -1,0 +1,47 @@
+
+
+<!doctype html>
+<html lang="ru">
+  <head>
+      <div id="app"
+@pointerdown="down"
+@pointermove="move"
+@pointerup="up">
+<link rel="stylesheet" href="book.css">
+</head>
+<!--   <div class="control">
+<input type="range" min=0 max=180 step=1 v-model.number="rotate">
+<input type="range" min=0 max=60 step=1 v-model.number="subrotate">
+</div> -->
+<body>
+    
+
+<div class="wrapper">
+<div class="page hyou hyou1"></div>
+<div class="page hyou hyou2"></div>
+<div class="hyou sebyo"></div>
+<div class="siori"></div>
+<div class="page papers page-left">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+</div>
+<div class="page papers page-right">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+</div>
+<div class="page page-single"
+  :style="singlePageObj">
+
+
+<div class="page-single-1" :style="edge">
+ <div class="page-single-1" :style="edge2">
+ </div>
+</div>
+</div>
+
+</div>
+
+</div>
+
+<h1><span class="css">CSS</span> Mini Book</h1>
+</body>
+<script src='book.js'></script>
+</html>

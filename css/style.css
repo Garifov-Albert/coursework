@@ -478,12 +478,12 @@ button:focus {
 }
 
 .menuIcon {
-  margin-left: -10px;
+  margin-left: 10px;
   margin-right: 34px;
   width: 42px;
   height: 32px;
   padding-top: 5px;
-  padding-left: 15px;
+
 }
 
 .menuName {
@@ -522,7 +522,7 @@ button:focus {
 .contentSearch {
   width: 1131px;
   height: 54px;
-  border: 2px solid #000000;
+  border: 2px solid #1F7A8C;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 33px;
@@ -828,6 +828,10 @@ button:focus {
   background: var(--colBg);
   border-radius: 30px;
 }
+.dayCol:hover{
+  background: var(--orange);
+  transition: 0.5s;
+}
 .dayColName {
   font-family: var(--font);
 font-style: normal;
@@ -1022,4 +1026,122 @@ text-decoration: none;
 }
 .planMonthChooseScrollActive {
   visibility: visible;
+}
+
+
+/* SECTION */
+
+.sectionGrid {
+  position: absolute;
+  display: grid;
+  grid-template-rows: repeat(8,80px);
+  row-gap: 24px;
+  height: 605px;
+  width: 1100px;
+  margin-left: 180px;
+  overflow-y: scroll;  
+  overflow-x: hidden; 
+  margin-top: 100px;
+  z-index: 5;
+}
+.sectionCol{
+  height: 80px;
+  background: var(--bgcLight);
+  border-radius: 30px;
+  width: 1000px;
+  display: inline-block;
+  z-index: 4;
+  padding: 17px 0px 16px 36px;
+  font-family: var(--font);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 42px;
+  color: #000000;
+}
+.sectionCol:hover {
+  background-color: var(--orange);
+  transition: 0.5s;
+  color: black;
+
+}
+.sectionAdd{
+background: var(--orange);
+border-radius: 33px;
+padding: 17px 43px 25px 44px;
+font-family: var(--font);
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 28px;
+border:none;
+color: rgba(0, 0, 0, 0.73);
+margin-top: 765px;
+margin-left: 1080px;
+}
+.sectionAdd:hover {
+  background: rgba(0, 0, 0, 0.73);
+  color: var(--orange);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.trashGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 235px);
+  column-gap: 33px;
+  row-gap: 33px;
+  margin-top: 40px;
+  margin-left: 70px;
+  width: 1090px;
+  height: 570px;
+  overflow: scroll;
+  overflow-x:hidden;
+}
+.trashCol {
+  width: 235px;
+  height: 157px;  
+  background: var(--colBg);
+  border-radius: 30px;
+}
+.trashCol:hover{
+  background: var(--orange);
+  transition: 0.5s;
+}
+.trashColName {
+  font-family: var(--font);
+font-style: normal;
+font-weight: normal;
+font-size: 25px;
+line-height: 42px;
+color: #000000;
+margin-top: 10px;
+margin-left: 40px;
+}
+.trashColDAte {
+  font-family: var(--font);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 42px;
+  color: #000000;
+  padding-top: 0px;
+  margin-left: 40px;
+}
+.trashColPriorityTxt {
+  font-family: var(--font);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 42px;
+  color: #000000;
+  margin-top: 10px;
+  margin-left: 40px;
+}
+.trashColPriority {
+  margin-left: 3px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50px;
+  background: var(--redPriority);
 }

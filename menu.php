@@ -27,23 +27,23 @@ if(isset($_POST['logout']))
     <button class='menuMenu'><img src="img/menu.png" alt=""></button>
         <form action="menu.php" method="post">
     <div class="menuBox">
-        <a class="menuCol" href='content.html' target='content'>
+        <a class="menuCol" href='write.html' target='content'>
             <img src="img/add.png"   alt="Plan" class="menuIcon">
             <p class="menuName">Написать</p>
         </a>
-        <a class="menuCol" href='day.html' target="content">
+        <a class="menuCol" href='all.html' target="content">
             <img src="img/day.png" alt="Day" class="menuIcon">
-            <p class="menuName">День</p>
+            <p class="menuName">Все заметки</p>
         </a>
         <a class="menuCol" href='plan.html' target='content'>
             <img src="img/plan.png"   alt="Plan" class="menuIcon">
             <p class="menuName">Запланировано</p>
         </a>
-        <a class="menuCol">
+        <a class="menuCol" href='IZBR.html' target='content'>
             <img src="img/favourite.png" alt="favourite" class="menuIcon">
             <p class="menuName">Избранные</p>
         </a>
-        <a class="menuCol">
+        <a class="menuCol" href='section.html' target='content'>
             <img src="img/section.png" alt="section" class="menuIcon">
             <p class="menuName">Разделы</p>
         </a>
@@ -51,7 +51,7 @@ if(isset($_POST['logout']))
             <img src="img/bell.png" alt="bell" class="menuIcon">
             <p class="menuName">Напоминание</p>
         </a>
-        <a class="menuCol">
+        <a class="menuCol"  href='trash.html' target='content'>
             <img src="img/trash.png" alt="trash" class="menuIcon">
             <p class="menuName">Корзина</p>
         </a>

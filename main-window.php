@@ -17,7 +17,7 @@
    <frameset frameborder='0' rows="*" cols='347,*' name="full">
             <frame class='frame' name="menu" src="menu.php">
             <frameset cols="*" rows='*'>
-                <frame class='content' name="content" src="content.html">
+                <frame class='content' name="content" src="write.html">
             </frameset>
     </frameset>
 

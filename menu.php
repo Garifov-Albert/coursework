@@ -27,7 +27,7 @@ if(isset($_POST['logout']))
     <button class='menuMenu'><img src="img/menu.png" alt=""></button>
         <form action="menu.php" method="post">
     <div class="menuBox">
-        <a class="menuCol" href='write.html' target='content'>
+        <a class="menuCol" href='content.html' target='content'>
             <img src="img/add.png"   alt="Plan" class="menuIcon">
             <p class="menuName">Написать</p>
         </a>

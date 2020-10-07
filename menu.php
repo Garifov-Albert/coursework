@@ -55,6 +55,10 @@ if(isset($_POST['logout']))
             <img src="img/trash.png" alt="trash" class="menuIcon">
             <p class="menuName">Корзина</p>
         </a>
+        <a class="menuCol" target="content" href='settings.html' name="logout">
+            <img src="img/settings.png" alt="logout" class="menuIcon">
+            <p class="menuName menuNameExit">Настройки</p>
+        </a>
         <a class="menuCol" target="full2" href='login.php' name="logout">
             <img src="img/logout.png" alt="logout" class="menuIcon">
             <p class="menuName menuNameExit">Выйти</p>

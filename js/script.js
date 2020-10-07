@@ -2,6 +2,8 @@ $(document).ready(function(){
     const root = document.querySelector(':root');
     const rootStyles = getComputedStyle(root);
     const primaryColor = rootStyles.getPropertyValue('--primaryColor');
+    const screenWidth = window.screen.width;
+    const screenHeight = window.screen.height;
     /* ТЕМНАЯ ТЕМА */
     root.style.setProperty('--primaryColor', '#022B3A');
     root.style.setProperty('--colBg', '#1D5864');
@@ -57,4 +59,9 @@ $(document).ready(function(){
    $('.settingDark').on('click', function(){
     alert('темная тема активна');
 });
+    if (screenWidth <= 578) {
+    var YA = document.getElementsByClassName('loginBtn')
+	YA.href="registration.php";
+    document.getElementsByClassName('loginBtn').innerHTML = YA.href;
+    }
 });  

@@ -15,6 +15,7 @@ p {
 }
 #login {
   background-color: #F7ECE1;
+  width: 100%;
   height: 935px;
 }
 
@@ -29,6 +30,7 @@ p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  
 }
 
 .loginTitle {
@@ -412,6 +414,7 @@ button:focus {
           flex-direction: column;
   margin-top: 56px;
   margin-left: -5px;
+  width: 50rem;
 }
 
 .menuCol {
@@ -1237,4 +1240,54 @@ color: var(--colTxtColor);;
 .settingDark:hover{
   background: black;
   border: 2px solid #EF8A17;
+}
+@media (max-width: 578px) {
+  #login{
+    box-sizing: border-box;
+    width: 414px;
+    height: 770px;
+  }
+  .loginBox {
+
+    margin-top: 0px;
+    width: 337px;
+  }
+  .loginEmail {
+    width: 242px;
+    height: 52px;
+    font-size: 18px;
+    font-family: var(--font);
+    margin-left: 50px;
+    margin-top: 150px;
+  }
+  .loginPassword {
+    width: 242px;
+   height: 52px;
+    font-size: 18px;
+    font-family: var(--font);
+    margin-left: 50px;
+  }
+  .logoImg {
+    margin-top: 10px;
+    margin-left: 15px;
+    width: 60px;
+  height: 60px;
+  }
+  .loginLogo {
+    width: 99px;
+  height: 90px;
+  }
+  .loginBtn {
+    width: 114px;
+height: 43px;
+font-size: 20px;
+  }
+  .logrRegistrBtn {
+    width: 228px;
+height: 43px;
+    font-size: 20px;
+    padding: 0px 6px 8px 16px;
+    margin-top: 43px;
+    margin-left: 60px;
+  }
 }

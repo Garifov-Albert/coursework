@@ -50,7 +50,7 @@ if(isset($data['do_login']))
         <input class='loginEmail' placeholder='Login' type="text" name="login" required>
         <input class='loginPassword'  placeholder='Password' type="password" name="password" required>
         <button  type="submit" class="loginBtn" name = "do_login">Войти</button>
-        <button class='logrRegistrBtn' href='registration.php'>Зарегестрироваться</button>
+        <button class='logrRegistrBtn' target='full2' href='registration.php'>Зарегестрироваться</button>
       </div>
   </div>
 </section>

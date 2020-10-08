@@ -5,13 +5,14 @@ $(document).ready(function(){
     const screenWidth = window.screen.width;
     const screenHeight = window.screen.height;
     /* ТЕМНАЯ ТЕМА */
-    root.style.setProperty('--primaryColor', '#022B3A');
+   /* root.style.setProperty('--primaryColor', '#022B3A');
     root.style.setProperty('--colBg', '#1D5864');
     root.style.setProperty('--colTxtColor', '#EF8A17');
     root.style.setProperty('--colHoverBg', '#022B3A');
-    root.style.setProperty('--chooseBg', '#C8C8C8'); /* при добавление фон исчезает и по нажатию не исчезает(через раз) BOX*/
+    root.style.setProperty('--chooseBg', '#C8C8C8'); /* при добавление фон исчезает и по нажатию не исчезает(через раз) BOX
     root.style.setProperty('--bgcLight', '#1D5864');
     root.style.setProperty('--orange', '#C67E2C');
+    */
    $('.menuMenu').on('click', function(){
        //$('.menuName').toggleClass('.menuNameActive');
        $('.menu').toggleClass('menuActive');
@@ -61,7 +62,9 @@ $(document).ready(function(){
 });
     if (screenWidth <= 578) {
     var YA = document.getElementsByClassName('loginBtn')
-	YA.href="registration.php";
-    document.getElementsByClassName('loginBtn').innerHTML = YA.href;
+	MobLogHref ="trash.html";
+    document.getElementsByClassName('loginBtn').innerHTML = MobLogHref;
+    alert('asd');
     }
+    
 });  

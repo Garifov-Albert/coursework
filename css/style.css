@@ -340,6 +340,8 @@ button:focus {
       -ms-flex-pack: center;
           justify-content: center;
   height: 935px;
+  overflow-y: none;
+  overflow-x: none;
 }
 
 .menu {
@@ -412,9 +414,11 @@ button:focus {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-top: 56px;
+  margin-top: 36px;
   margin-left: -5px;
-  width: 50rem;
+  overflow-y: none;
+  overflow-x: none;
+  
 }
 
 .menuCol {
@@ -440,6 +444,7 @@ button:focus {
   border-radius: 50px;
   height: 55px;
   text-decoration: none;
+  position: absolute;
 }
 .menuCol:hover {
   text-decoration: none;
@@ -449,6 +454,7 @@ button:focus {
           box-sizing: border-box;
   border-radius: 50px;
   height: 55px;
+  position: absolute;
 }
 
 .menuCol:focus {
@@ -522,7 +528,7 @@ button:focus {
   display: none;
   /* CONTENT */
 }
-
+ /* CONTENT */
 #content {
   background: var(--bgcLight);
 }
@@ -585,7 +591,6 @@ button:focus {
   line-height: 56px;
   
 }
-
 .contentTextArea:-ms-input-placeholder {
   color: black;
   font-family: var(--font);
@@ -1241,7 +1246,9 @@ color: var(--colTxtColor);;
   background: black;
   border: 2px solid #EF8A17;
 }
+
 @media (max-width: 578px) {
+  /* MOB  LOGIN */
   #login{
     box-sizing: border-box;
     width: 414px;
@@ -1284,10 +1291,11 @@ font-size: 20px;
   }
   .logrRegistrBtn {
     width: 228px;
-height: 43px;
+  height: 43px;
     font-size: 20px;
     padding: 0px 6px 8px 16px;
     margin-top: 43px;
     margin-left: 60px;
   }
+  
 }

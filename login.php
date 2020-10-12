@@ -1,4 +1,5 @@
 <?php
+
 require 'includes/connectdb.php';
 $data =  $_POST;
 if(isset($data['do_login']))
@@ -20,6 +21,7 @@ if(isset($data['do_login']))
 }
 
 ?>
+
 <!doctype html>
 <html lang="ru">
   <head>
@@ -49,8 +51,8 @@ if(isset($data['do_login']))
       <div class="loginBox">
         <input class='loginEmail' placeholder='Login' type="text" name="login" required>
         <input class='loginPassword'  placeholder='Password' type="password" name="password" required>
-        <button  type="submit" class="loginBtn" name = "do_login">Войти</button>
-        <button class='logrRegistrBtn' target='full2' href='registration.php'>Зарегестрироваться</button>
+        <button  type="submit"  href='main-window.php' class="loginBtn" name = "do_login">Войти</button>
+        <button class='logrRegistrBtn'  target='full2' href='registration.php'>Зарегестрироваться</button>
       </div>
   </div>
 </section>
@@ -61,7 +63,8 @@ if(isset($data['do_login']))
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="js/bootstrap.min.js"></script>
-
+    <script src="js/script.js"></script>  
     <!--FONTS-->
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 </html>

@@ -5,14 +5,14 @@ $(document).ready(function(){
     const screenWidth = window.screen.width;
     const screenHeight = window.screen.height;
     /* ТЕМНАЯ ТЕМА */
-   /* root.style.setProperty('--primaryColor', '#022B3A');
+    root.style.setProperty('--primaryColor', '#022B3A');
     root.style.setProperty('--colBg', '#1D5864');
     root.style.setProperty('--colTxtColor', '#EF8A17');
     root.style.setProperty('--colHoverBg', '#022B3A');
-    root.style.setProperty('--chooseBg', '#C8C8C8'); /* при добавление фон исчезает и по нажатию не исчезает(через раз) BOX
+    root.style.setProperty('--chooseBg', '#C8C8C8'); /* при добавление фон исчезает и по нажатию не исчезает(через раз) BOX*/
     root.style.setProperty('--bgcLight', '#1D5864');
     root.style.setProperty('--orange', '#C67E2C');
-    */
+    
    $('.menuMenu').on('click', function(){
        //$('.menuName').toggleClass('.menuNameActive');
        $('.menu').toggleClass('menuActive');
@@ -54,17 +54,15 @@ $(document).ready(function(){
     $('.contentInput').on('mouseLeave',function(){
         $('.contentRemind').css('color', 'rgba(0, 0, 0, 0.73);')
    });
-   $('.settingDark').on('click', function(){
-        
+   $('.settingDark').on('click', function(){   
    });
    $('.settingDark').on('click', function(){
     alert('темная тема активна');
-});
-    if (screenWidth <= 578) {
-    var YA = document.getElementsByClassName('loginBtn')
-	MobLogHref ="trash.html";
-    document.getElementsByClassName('loginBtn').innerHTML = MobLogHref;
-    alert('asd');
-    }
+    });
     
+    /* Переключение ссылок для мобилки*/
+    if (screenWidth <= 578) {
+        $('.loginBtn').attr('href', 'https://translate.yandex.ru');
+        $('.logrRegistrBtn').attr('href','https://translate.yandex.ru');
+    } 
 });  

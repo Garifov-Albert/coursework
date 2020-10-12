@@ -444,7 +444,6 @@ button:focus {
   border-radius: 50px;
   height: 55px;
   text-decoration: none;
-  position: absolute;
 }
 .menuCol:hover {
   text-decoration: none;
@@ -454,7 +453,6 @@ button:focus {
           box-sizing: border-box;
   border-radius: 50px;
   height: 55px;
-  position: absolute;
 }
 
 .menuCol:focus {
@@ -793,6 +791,17 @@ button:focus {
           box-sizing: border-box;
   padding-left: 195px;
  
+}
+.remind {
+.font-family: var(--font);
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 28px;
+position: absolute;
+margin-top: -40px;
+margin-left: 800px;
+z-index: 10;
 }
 .contentInput:hover {
   background: rgba(0, 0, 0, 0.73);
@@ -1248,16 +1257,33 @@ color: var(--colTxtColor);;
 }
 
 @media (max-width: 578px) {
+  body {
+    width:100%;
+    height: 100%;
+  }
+  * {
+    box-sizing: border-box  ;
+  }
+  .loginContainer {
+    width:100%;
+    height: 100%;
+  }
+    
   /* MOB  LOGIN */
   #login{
     box-sizing: border-box;
     width: 414px;
     height: 770px;
   }
+  .loginTitle {
+    margin-top: -10px;
+    margin-left: -30px;
+    font-size: 54px;
+  }
   .loginBox {
-
     margin-top: 0px;
-    width: 337px;
+    margin-left: -40px;
+    width: 327px;
   }
   .loginEmail {
     width: 242px;
@@ -1279,6 +1305,10 @@ color: var(--colTxtColor);;
     margin-left: 15px;
     width: 60px;
   height: 60px;
+  }
+  .loginLogo {
+    margin-left: -20px;
+    margin-top: 90px;
   }
   .loginLogo {
     width: 99px;

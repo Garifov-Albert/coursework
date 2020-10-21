@@ -1263,7 +1263,7 @@ color: var(--colTxtColor);;
   }
   #login {
     background-color: #fff;
-    
+
   }
   * {
     box-sizing: border-box  ;
@@ -1281,13 +1281,14 @@ color: var(--colTxtColor);;
   }
   .loginTitle {
     margin-top: -10px;
-    margin-left: -30px;
+    margin-left: 20px;
     font-size: 54px;
   }
   .loginBox {
     margin-top: 0px;
-    margin-left: -40px;
+    margin-left: 18px;
     width: 327px;
+    height: 550px;
   }
   .loginEmail {
     width: 242px;
@@ -1311,7 +1312,7 @@ color: var(--colTxtColor);;
   height: 60px;
   }
   .loginLogo {
-    margin-left: -20px;
+    margin-left: 20px;
     margin-top: 90px;
   }
   .loginLogo {
@@ -1322,6 +1323,7 @@ color: var(--colTxtColor);;
     width: 114px;
 height: 43px;
 font-size: 20px;
+margin-left: 105px;
   }
   .logrRegistrBtn {
     display: block;
@@ -1330,7 +1332,7 @@ font-size: 20px;
     font-size: 20px;
     padding: 0px 6px 8px 16px;
     margin-top: 43px;
-    margin-left: 60px;
+    margin-left: 50px;
   }
   
 }

@@ -141,6 +141,7 @@ p {
   font-size: 26px;
   line-height: 30px;
   color: #C5FFFD;
+  padding: 15px 10px 0px 60px;
 }
 
 .loginBtn:hover {
@@ -312,11 +313,8 @@ p {
   transition: 0.5s;
 }
 
-.Birthday {
-  margin-top: -86px;
-  margin-left: -400px;
-  margin-bottom: 60px;
-  color: grey;
+.birthday {
+  margin-top: 100%;
 }
 
 input:focus {
@@ -793,7 +791,7 @@ button:focus {
  
 }
 .remind {
-.font-family: var(--font);
+font-family: var(--font);
 font-style: normal;
 font-weight: bold;
 font-size: 24px;
@@ -1324,6 +1322,8 @@ color: var(--colTxtColor);;
 height: 43px;
 font-size: 20px;
 margin-left: 105px;
+padding-left: 30px;
+padding-top: 5px;
   }
   .logrRegistrBtn {
     display: block;

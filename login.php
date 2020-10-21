@@ -51,7 +51,7 @@ if(isset($data['do_login']))
       <div class="loginBox">
         <input class='loginEmail' placeholder='Login' type="text" name="login" required>
         <input class='loginPassword'  placeholder='Password' type="password" name="password" required>
-        <button  type="submit"  href='main-window.php' class="loginBtn" name = "do_login">Войти</button>
+        <a  type="submit"  href='main-window.php' class="loginBtn" name = "do_login">Войти</a>
         <a class='logrRegistrBtn' target="_self" href='registration.php'>Зарегестрироваться</a
       </div>
   </div>

@@ -30,12 +30,16 @@ color: #1F7A8C;
 margin-top: 0px;
 }
 .mobRegistrBox {
+  display: flex;
+  flex-direction: column  ;
+  align-items: center;
   width: 337px;
   height: 502px;
   background: white;
   border: 2px solid black;
   margin-top: -50px;
   border-radius: 50px;
+  margin-left: 10px;
 }
 .mobRegistrHeadline {
   font-family: var(--font);
@@ -46,35 +50,34 @@ line-height: 47px;
 text-align: center;
 color: #C67E2C;
 margin-top: 10px;
+margin-bottom: 15%;
 }
 
 .mobRegistrInput {
-  width: 242px;
-height: 42px;
+  width: 80%;
+height: 8%;
   background: #FFFFFF;
 border: 1px solid #000000;
 box-sizing: border-box;
 border-radius: 33px;
 padding-left: 20px;
 margin-top: 30px;
-margin-left: 40px;
+
 }
 .firstmobRegistrInput {
   margin-top: -40px;
 } 
 .mobRegistrDate {
-  padding-left: 110px;
+  padding-left: 140px;
 }
 .birthday {
-  position: absolute;
-margin-top: -30px;
-margin-left: 50px;
-font-size: 13px;
+ position: absolute;
+ margin-top: 95%;
+ margin-left: -35%;
 }
 .mobRegistrBtn {
   color: #C5FFFD;
-  margin-left: 20px;
-  width: 283px;
+  width: 80%;
   height: 45px;
   padding: 5px 28px 10px 35px;
   background: #1F7A8C;;
@@ -86,7 +89,6 @@ font-size: 13px;
   font-size: 20px;
   line-height: 30px;
   margin-top: 30px;
-  margin-left:25px ;
 }
 
 

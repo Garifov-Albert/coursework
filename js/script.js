@@ -62,7 +62,7 @@ $(document).ready(function(){
     
     /* Переключение ссылок для мобилки*/
     if (screenWidth <= 578) {
-        $('.loginBtn').attr('href', 'https://translate.yandex.ru');
-        $('.logrRegistrBtn').attr('href','https://translate.yandex.ru');
+        $('.loginBtn').attr('href', 'mob/mobContent.html');
+        $('.logrRegistrBtn').attr('href','mob/mobRegistration.html');
     } 
 });  

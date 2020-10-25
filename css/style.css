@@ -313,7 +313,7 @@ p {
   transition: 0.5s;
 }
 
-.birthday {
+.Birthday {
   margin-top: 100%;
 }
 
@@ -424,6 +424,7 @@ button:focus {
   border: none;
   background: none;
   width: 60px;
+  height: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -432,7 +433,7 @@ button:focus {
       -ms-flex-direction: row;
           flex-direction: row;
   margin-left: 40px;
-  margin-bottom: 38px;
+  margin-bottom:30px;
 }
 .menuCol:active {
   background: var(--primaryColor);
@@ -440,17 +441,18 @@ button:focus {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 50px;
-  height: 55px;
+  height: 40px;
   text-decoration: none;
 }
 .menuCol:hover {
   text-decoration: none;
   background: var(--primaryColor);
   border: 2px solid #C5FFFD;
+  
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 50px;
-  height: 55px;
+  height: 40px;
 }
 
 .menuCol:focus {
@@ -470,7 +472,7 @@ button:focus {
       -ms-flex-direction: row;
           flex-direction: row;
   margin-left: 40px;
-  margin-bottom: 38px;
+  margin-bottom: 30px;
 }
 
 .menuFirstCol:hover {
@@ -479,7 +481,7 @@ button:focus {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 50px;
-  height: 55px;
+  height: 40px;
 }
 
 .menuFirstCol:focus {
@@ -489,10 +491,9 @@ button:focus {
 .menuIcon {
   margin-left: 10px;
   margin-right: 34px;
-  width: 42px;
-  height: 32px;
+  width: 30px;
+  height: 30px;
   padding-top: 5px;
-
 }
 
 .menuName {
@@ -511,10 +512,6 @@ button:focus {
   display: block;
 }
 
-.menuIcon {
-  width: 40px;
-  height: 40px;
-}
 
 .menuNameExit {
   margin-top: 7px;
@@ -1088,7 +1085,156 @@ text-decoration: none;
 
 
 /* SECTION */
+.contentShowComment {
 
+}
+.commentShowP {
+  position: absolute;
+  font-size: 35px;
+  width: 36%;
+  height: 10%;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 50px;
+  z-index: 3;
+  margin-top: 70px;
+  margin-left: 135px;
+  right: 10%;
+  border:none;
+  padding-top: 10px;
+  padding-left: 30px;
+}
+.commentShowDescription {
+  position: absolute;
+  color: #EF8A17;
+  font-size: 25px;
+  margin-top: 170px;
+  margin-left: 15px;
+  right: 30%;
+  z-index: 5;
+}
+.samComment {
+  position: absolute;
+  font-size: 35px;
+  width: 36%;
+  height: 50%;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 50px;
+  z-index: 3;
+  margin-top: 220px;
+  margin-left: 135px;
+  right: 10%;
+  border:none;
+  padding-top: 10px;
+  padding-left: 30px;
+
+  outline:none;
+}
+.commentHide {
+  margin-left: 80%;
+  transition: 1s;
+  background: #EF8A17;
+  border-radius: 33px;
+  width: 180px;
+  height: 54px;
+  color: rgba(0, 0, 0, 0.73);
+  font-family: var(--font);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  border: none;
+  position: absolute;
+  margin-top: 760px;
+  margin-left: 720px;
+  margin-bottom: 0px;
+}
+.commentHide:hover {
+  background: rgba(0, 0, 0, 0.73);
+  color: #EF8A17;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.contentPrimaryBg3 {
+  position: absolute;
+  width: 40%;
+  height: 700px;
+  background: var(--primaryColor);
+  border-radius: 50px;
+  z-index: 2;
+  margin-top: 50px;
+  margin-left: 74px;
+  right: 8%;
+}
+.contentCommentFlex {
+  display: flex;
+  flex-direction: column;
+}
+.сontentActive {
+  transition: 4s;
+}
+.contentAddSection {
+  display: none;
+}
+.contentAddSave {
+  margin-left: 80%;
+  transition: 1s;
+}
+.contentPrimaryBg2 {
+  position: absolute;
+  width: 40%;
+  height: 700px;
+  background: var(--primaryColor);
+  border-radius: 50px;
+  z-index: 2;
+  margin-top: 50px;
+  margin-left: 74px;
+  right: 8%;
+}
+.contentLightBg2{
+  position: absolute;
+  width: 36%;
+  height: 10%;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 50px;
+  z-index: 3;
+  margin-top: 70px;
+  margin-left: 135px;
+  right: 10%;
+  border:none;
+  padding-top: 10px;
+  padding-left: 30px;
+}
+.contentLightBg2::placeholder {
+  padding-top: 10px;
+  padding-left: 20px;
+  font-size: 20px;
+  color: black;
+}
+.contentLightBg3 {
+  position: absolute;
+  width: 36%;
+  height: 55%;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 50px;
+  z-index: 3;
+  margin-top: 10%;
+  margin-left: 135px;
+  right: 10%;
+  padding-top: 30px;
+  padding-left: 20px;
+  outline: none;
+}
+.contentLightBg3::placeholder {
+  padding-top: 10px;
+  padding-left: 20px;
+  font-size: 20px;
+  color: black;
+}
+.contentAddFlex {
+  display: flex;
+  flex-direction: column;
+
+}
 .sectionGrid {
   position: absolute;
   display: grid;
@@ -1117,10 +1263,12 @@ text-decoration: none;
   line-height: 42px;
   color:var(--colTxtColor);;
 }
+.sectionCol a { 
+  color:var(--colTxtColor);;
+}
 .sectionCol:hover {
-  background-color: #EF8A17;
+  background-color: #022B3A;
   transition: 0.5s;
-  color: black;
 }
 .sectionAdd{
 background: #EF8A17;
@@ -1142,7 +1290,21 @@ margin-left: 1080px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
-
+.contentShowComment {
+  display: none;
+}
+.sectionComment {
+background: none;
+border:none;
+cursor: pointer;
+width:32px;
+height: 32px; 
+display: block;
+z-index: 5;
+margin-left: 90%;
+margin-top: -50px;
+}
+/* TRASH */
 .trashGrid {
   display: grid;
   grid-template-columns: repeat(4, 235px);

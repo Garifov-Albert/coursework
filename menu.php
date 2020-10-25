@@ -10,6 +10,7 @@ if(isset($_POST['logout']))
 */
 ?>
 
+
 <!doctype html>
 <html class='menuHtml' lang="ru">
 	<link rel="stylesheet" href="css/bootstrap.css">

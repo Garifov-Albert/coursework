@@ -65,4 +65,37 @@ $(document).ready(function(){
         $('.loginBtn').attr('href', 'mob/mobContent.html');
         $('.logrRegistrBtn').attr('href','mob/mobRegistration.html');
     } 
+    /*Раздел */
+    $('.sectionAdd').on('click', function(){
+        $('.contentPrimaryBg').css('width', "40%").css('transition', '1.1s');
+        $('.contentLightBg').css('width', "33%").css('transition', '1.1s');
+        $('.sectionGrid').css('width', "30%").css('transition', '1.1s');
+        $('.sectionCol').css('width', "90%").css('transition', '1.1s');
+        $('.sectionAdd').css('margin-left','25%').css('transition', '1.1s');
+        $('.contentAddSection').css('display', 'block');
+    });
+    $('.contentAddSave').on('click', function() {
+        $('.contentAddSection').css('display', 'none');
+        $('.contentPrimaryBg').css('width', "1298px").css('transition', '1.1s');
+        $('.contentLightBg').css('width', "1178px").css('transition', '1.1s');
+        $('.sectionGrid').css('width', "1100px").css('transition', '1.1s');
+        $('.sectionCol').css('width', "1000px").css('transition', '1.1s');
+        $('.sectionAdd').css('margin-left','1080px').css('transition', '1.1s');
+    });
+    $('.sectionComment').on('click', function(){
+        $('.contentPrimaryBg').css('width', "40%").css('transition', '1.1s');
+        $('.contentLightBg').css('width', "33%").css('transition', '1.1s');
+        $('.sectionGrid').css('width', "30%").css('transition', '1.1s');
+        $('.sectionCol').css('width', "90%").css('transition', '1.1s');
+        $('.sectionAdd').css('margin-left','25%').css('transition', '1.1s');
+        $('.contentShowComment').css('display', 'block');
+    });
+    $('.commentHide').on('click', function(){
+        $('.contentShowComment').css('display', 'none');
+        $('.contentPrimaryBg').css('width', "1298px").css('transition', '1.1s');
+        $('.contentLightBg').css('width', "1178px").css('transition', '1.1s');
+        $('.sectionGrid').css('width', "1100px").css('transition', '1.1s');
+        $('.sectionCol').css('width', "1000px").css('transition', '1.1s');
+        $('.sectionAdd').css('margin-left','1080px').css('transition', '1.1s');
+    });
 });  

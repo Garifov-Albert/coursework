@@ -13,50 +13,59 @@
     <title>D:\Planner content</title>
   </head>
   <body id=content>
+      <div class="contentActive">
     <div class="contentLine">
+        <div class="sectionBbody">
         <input type="text" placeholder='Поиск' class="contentSearch">
         <img src="img/search (2) 1.png" alt="" class='contentSearchIcon'>
-        <a href="settings.html" class="contentSettings"  target='content'>
-            <img src="img/settings (1) 1.png" class='contentSettingsIcon' alt="">
-        </a>
+        
         <div class="contentPrimaryBg"></div>
         <div class="contentLightBg"></div>
         <div class="sectionGrid">
-            <a href="#" class="sectionCol">
-                Название раздела
-            </a>
-            <a href="#" class="sectionCol">
-                Название раздела
-            </a>
-            <a href="#" class="sectionCol">
-                Название раздела
-            </a>
-            <a href="#" class="sectionCol">
-                Название раздела
-            </a>
-            <a href="#" class="sectionCol">
-                Название раздела
-            </a>
-            <a href="#" class="sectionCol">
-                Название раздела
-            </a>
-            <a href="#" class="sectionCol">
-                Название раздела
-            </a>
-            <a href="#" class="sectionCol">
-                Название раздела
-            </a>
-            <a href="#" class="sectionCol">
-                Название раздела
-            </a>
+            <div href="#" class="sectionCol">
+                <a href="#">Название раздела</a>
+                <button  class='sectionComment'><img src="img/chat.png" alt=""></button> 
+            </div>
+            <div href="#" class="sectionCol">
+                <a href="#">Название раздела</a>
+                <button  class='sectionComment'><img src="img/chat.png" alt=""></button> 
+            </div>
+            <div href="#" class="sectionCol">
+                <a href="#">Название раздела</a>
+                <button  class='sectionComment'><img src="img/chat.png" alt=""></button> 
+            </div>
+            <div href="#" class="sectionCol">
+                <a href="#">Название раздела</a>
+                <button  class='sectionComment'><img src="img/chat.png" alt=""></button> 
+            </div>
+            
         </div>
         <div class="contentCircle1"></div>
         <div class="contentCircle2"></div>
         <div class="contentCircle3"></div>
-    </div>
+        <div class="contentShowComment">
+            <div class="contentPrimaryBg3"></div>
+            <div class="contentCommentFlex">
+                <input type="text"  name = "name" class="colComment commentShowP">
+                
+                <p class='colComment commentShowDescription'>Комментарий раздела:</p>
+                <textarea class="samComment"  name="section" id="" cols="30" rows="10"></textarea>
+            </div>
+            <button class="contentSave  commentHide">Скрыть</button>
+        </div>
+        <div class="contentAddSection">
+            <div class="contentPrimaryBg2"></div>
+            <div class="contentAddFlex">
+                        <input type="text" placeholder="Введите название раздела" name = "name" class="contentLightBg2 contentAddCol">
+                    <textarea class="contentLightBg3" placeholder="Введите комментарий к разделу" name="section" id="" cols="30" rows="10"></textarea>
+            </div>
+            <button class="contentSave contentAddSave">Сохранить</button>
+        </div>
     <button class='sectionAdd'>
         Добавить раздел
     </button>
+    </div>
+    </div>
 </body>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

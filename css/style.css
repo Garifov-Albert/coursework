@@ -13,6 +13,8 @@
 p {
   margin-bottom: 0px;
 }
+ /* LOGIN */
+
 #login {
   background-color: #F7ECE1;
   width: 100%;
@@ -178,8 +180,10 @@ p {
   transition: 1s;
 }
 
+/* registration */
 #registr {
   background-color: #F7ECE1;
+  height: 100%;
 }
 
 .registrContainer {
@@ -749,7 +753,7 @@ button:focus {
   background: #EF8A17;
   border-radius: 33px;
   width: 180px;
-  height: 54px;
+height: 64px;
   color: rgba(0, 0, 0, 0.73);
   font-family: var(--font);
   font-style: normal;
@@ -771,7 +775,7 @@ button:focus {
 .contentInput {
   background: #EF8A17;
   border-radius: 33px;
-  width: 380px;
+  width: 240px;
   height: 54px;
   color: rgba(0, 0, 0, 0.73);
   font-family: var(--font);
@@ -784,8 +788,37 @@ button:focus {
   margin-left: 335px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding-left: 195px;
+ padding-left: 25px;
  
+}
+.contentInput::placeholder{
+  
+  font-family: 'Roboto';
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 28px;
+
+color: rgba(0, 0, 0, 0.73);
+}
+.contentInput:hover::placeholder {
+  color: #EF8A17;
+}
+.notionName {
+  background: rgba(255, 255, 255, 0.6);
+box-sizing: border-box;
+border-radius: 33px;
+border:none;
+color:black;
+width: 400px;
+height: 50px;
+margin-left: 144px;
+font-size: 25px;
+padding-left: 4 5px;
+margin-top: 40px;
+}
+.notionName::placeholder{
+  color:black;
 }
 .remind {
 font-family: var(--font);
@@ -1145,8 +1178,9 @@ text-decoration: none;
   border: none;
   position: absolute;
   margin-top: 760px;
-  margin-left: 720px;
-  margin-bottom: 0px;
+  right:10%;
+  width: 180px;
+height: 64px;
 }
 .commentHide:hover {
   background: rgba(0, 0, 0, 0.73);
@@ -1273,13 +1307,15 @@ text-decoration: none;
 .sectionAdd{
 background: #EF8A17;
 border-radius: 33px;
-padding: 17px 43px 25px 44px;
+width: 240px;
+height: 64px;
 font-family: var(--font);
 font-style: normal;
 font-weight: bold;
 font-size: 24px;
 line-height: 28px;
 border:none;
+
 color: rgba(0, 0, 0, 0.73);
 margin-top: 765px;
 margin-left: 1080px;

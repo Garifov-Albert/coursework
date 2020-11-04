@@ -13,8 +13,7 @@
   </head>
   <body id='content'>
     <div class="contentLine">
-        <input type="text" placeholder='Поиск' class="contentSearch">
-        <img src="img/search (2) 1.png" alt="" class='contentSearchIcon'>
+        <input type="text" placeholder='Название...' class='notionName' id='name'>
         <div class="contentPrimaryBg"></div>
             <p><textarea class='contentTextArea' placeholder='Заметка...' name="comment"></textarea></p>        
         <div class="contentCircle1"></div>
@@ -32,8 +31,8 @@
                 </button>
             </div>
         <button class="contentFavourite">Добавить в избранные</button>
-       <input type="date" placeholder='Напомнить' class="contentInput" id="contentDate" name="date" required>
-       <p class='remind'>Напомнить</p>     
+       <input  placeholder='Напомнить' type="text" onfocus="(this.type='date')" onblur="(this.type='text')" id="date" class="contentInput"  name="date" required>
+           
         <button class="contentSave">Сохранить</button>
     </div>
 

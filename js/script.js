@@ -83,6 +83,7 @@ $(document).ready(function(){
         $('.sectionAdd').css('margin-left','1080px').css('transition', '1.1s');
     });
     $('.sectionComment').on('click', function(){
+        $('.sectionComment').css('margin-right','10%');
         $('.contentPrimaryBg').css('width', "40%").css('transition', '1.1s');
         $('.contentLightBg').css('width', "33%").css('transition', '1.1s');
         $('.sectionGrid').css('width', "30%").css('transition', '1.1s');

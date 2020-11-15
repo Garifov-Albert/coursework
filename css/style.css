@@ -1,4 +1,6 @@
 :root {
+  /* светлая тема */
+  /*
 --primaryColor: #1F7A8C;
 --font: 'Roboto', sans-serif;
 --bgcLight: #F7ECE1;
@@ -9,6 +11,19 @@
 --chooseBg: #EFECEC;
 --colTxtColor: black;
 --colHoverBg:  #EF8A17;
+*/
+/* темная тема*/
+--primaryColor: #022B3A;
+--font: 'Roboto', sans-serif;
+--bgcLight:#1D5864;
+--orange: #C67E2C;
+--colBg: #1D5864;
+--redPriority: #DB0D00;
+--yellowPriority:#DDD62C;
+--chooseBg: #C8C8C8;
+--colTxtColor: #EF8A17;
+--colHoverBg:  #022B3A; 
+*/
 }
 p {
   margin-bottom: 0px;
